@@ -2,6 +2,12 @@
 
 카카오클라우드에서 학습한 모델 데이터 및 전처리 결과물을 로컬로 복사한 저장소입니다.
 
+## 📦 데이터 다운로드
+
+**Google Drive 공유 폴더**: [AI 모델 데이터 다운로드](https://drive.google.com/drive/folders/1RIEx7ExMuJ3Vx-yg_8mJnUgY1HazYETj)
+
+---
+
 ## 📁 디렉토리 구조
 
 ```
@@ -201,28 +207,6 @@ N_EPOCHS = 20              # 총 학습 에포크
     'embedding_dim': int,
     'n_layers': int
 }
-```
-
----
-
-## 🔄 데이터 복사 명령어 기록
-
-```bash
-# 원본 데이터
-scp -i ~/3team/project03.pem -r ubuntu@210.109.82.91:/home/ubuntu/ai-model/datas/data/ .
-mv data ./originam-data
-
-# CBF 모델 데이터
-scp -i ~/3team/project03.pem -r ubuntu@210.109.82.91:/home/ubuntu/ai-model/models/cbf/v2/data ./sbert-data
-
-# CBF 모델 인덱스
-scp -i ~/3team/project03.pem -r ubuntu@210.109.82.91:/home/ubuntu/ai-model/models/cbf/v2/index ./sbert-index
-
-# LightGCN 체크포인트
-scp -i ~/3team/project03.pem -r ubuntu@210.109.82.91:/home/ubuntu/ai-model/models/light_gcn/checkpoints ./lightgcn-checkpoints
-
-# LightGCN 데이터
-scp -i ~/3team/project03.pem -r ubuntu@210.109.82.91:/home/ubuntu/ai-model/models/light_gcn/data ./lightgcn-data
 ```
 
 ---
