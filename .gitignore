@@ -1,0 +1,17 @@
+# git 추적 제외
+.DS_Store
+
+lightgcn-checkpoints/*
+!lightgcn-checkpoints/.gitkeep
+
+lightgcn-data/*
+!lightgcn-data/.gitkeep
+
+originam-data/*
+!originam-data/.gitkeep
+
+sbert-data/*
+!sbert-data/.gitkeep
+
+sbert-index/*
+!sbert-index/.gitkeep
